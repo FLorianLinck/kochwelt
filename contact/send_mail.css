@@ -1,0 +1,11 @@
+.main__container {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    display: grid;
+    place-items: center;
+    margin: 200px auto;
+    height: 50vh;
+    width: 50%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    max-width: 1440px;
+}

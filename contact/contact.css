@@ -1,0 +1,116 @@
+.contact__card {
+  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2); */
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  max-width: 30%;
+  /* background-color: #dcdcdc; */
+  border-radius: 10px;
+  min-height: calc(100vh - 325px);
+  overflow: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.innerContact__card {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin-top: 10px; */
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  background-color: #dcdcdc;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.h2__contact {
+  text-align: start;
+}
+
+form{
+  width: 100%;
+  margin-top: 5%;
+}
+
+.input__contact {
+  border: none;
+  border-radius: 6px;
+  height: 24px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.input__label {
+  text-align: start;
+}
+
+.contactButton__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.button__contact {
+  font-family: "Raleway", sans-serif;
+    background-color: #008000;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 180px;
+    height: 40px;
+    border-width: 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button__contact:hover {
+  background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+}
+
+option:disabled {
+  color: light-dark (graytext, rgb(170, 170, 170));
+}
+
+@media screen and (max-width:1000px) {
+  textarea {
+    height: 150px;
+  }
+
+  .contact__card {
+    max-width: 60%;
+    min-height: calc(100vh - 325px);
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .h2__contact {
+    font-size: 10px;
+  }
+
+  .input__label {
+    font-size: 12px;
+  }
+
+  .button__contact {
+    font-size: 12px;
+    width: 100%;
+  }
+  
+}
+
+

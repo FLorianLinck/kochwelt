@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="/tortellini/tortellini.css">
+    <link rel="stylesheet" href="/recipe/style_recipe.css">
+    <link rel="stylesheet" href="/kochwelt.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="/header/headerscript.js"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ac4600c0-e6ea-4a38-bf7f-e9a20cf44eb4"  type="text/javascript"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/kochwelt.html">
+                <img id="navbar__logo" src="/img/logo.png" alt="Kochwelt" >
+                </a>
+                <div class="navbar__toggle " onclick="toggel__menu()" >
+                    <span class="bar bar__active:nth-child"></span>
+                    <span class="bar bar__active:nth-child"></span>
+                    <span class="bar bar__active:nth-child"></span>
+                </div>
+                <ul class="navbar__menu navbar__menu__closed" id="mobile-menu">
+                    <li class="navbar__item">
+                        <a href="/kochwelt.html" class="navbar__links">Start</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tortellini_rezept/tortellini_rezept.html" class="navbar__links">Rezept des Tages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact.html" class="navbar__links">Kontakt</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/imressum.html" class="navbar__links">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="rdt">
+        <img class="tor_img" src="/img/tortellini.png" alt="">
+        <div class="rdt_text">
+            <h2 class="tor_h2">Tortellini alla panna</h2>
+            <span class="tor_text">Tortellini alla Panna ist ein klassisches italienisches Gericht, das für seine
+                cremige und reichhaltige Sauce bekannt ist. Es besteht aus kleinen, ringförmigen Teigwaren, die
+                traditionell mit einer Füllung aus Fleisch, Käse oder einer Mischung aus beidem gefüllt sind. Die
+                Tortellini werden in einer samtigen Sahnesauce serviert, die oft mit Parmigiano Reggiano, Butter und
+                manchmal etwas Schinken oder Speck verfeinert wird.</span>
+            <div>
+                <button class="bttn_start"><a href="/tortellini_rezept/tortellini_rezept.html">Rezept
+                        öffnen</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="recipes-section">
+        <div class="header-recipes">
+            <h3>Lust auf etwas Neues?</h3>
+        </div>
+        <div class="recipes-content">
+            <a href="./potatoes/potatoes.html" class="recipes-link">
+                <img class="img-recipes" src="./img/fried-potatoes.jpg" alt="Koreanische glasierte Kartoffeln">
+                <span class="recipes-description">Koreanische glasierte Kartoffeln</span>
+            </a>
+            <a href="./koreaBBQ/KoreaBBQ.html" class="recipes-link">
+                <img class="img-recipes" src="./img/KoreaBBQ.png" alt="Korean BBQ">
+                <span class="recipes-description">Korean BBQ</span>
+            </a>
+            <a href="./cordonBleu/cordonBleu.html" class="recipes-link">
+                <img class="img-recipes" src="./img/cordon_bleu.jpg" alt="cordonBleu">
+                <span class="recipes-description">Cordon bleu</span>
+            </a>
+
+        </div>
+    </section>
+
+    <section>
+        <h3 class="vs-description">Gasgrill vs. Kohlegrill</h3>
+        <div class="info-section">
+            <p class="info-description">
+                Kohle- und Gasgrills unterscheiden sich hauptsächlich in der Art der Energiequelle
+                und der Grilltechnik. Kohlegrills verwenden Holzkohle als Brennstoff, was zu einem
+                charakteristischen rauchigen Geschmack führt und oft als traditioneller empfunden wird.
+                Sie benötigen jedoch mehr Zeit zum Vorheizen und erfordern eine sorgfältige Handhabung der Kohle.
+                Gasgrills hingegen nutzen Propan- oder Erdgas, was eine schnellere und einfachere Temperaturregelung
+                ermöglicht. Sie sind in der Regel einfacher zu bedienen und schneller einsatzbereit,
+                bieten jedoch nicht den gleichen rauchigen Geschmack wie Kohlegrills.
+                Beide Grillarten haben ihre Vorzüge, je nach persönlichen Vorlieben und Grillgewohnheiten.
+            </p>
+            <img class="info-img" src="./img/grill.jpg" alt="Kohlegrill">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer__inbox">
+            <!-- <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a> -->
+            <div class="footer_nav">
+                <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a>
+                <div class="footer__links">
+                    <a class="footer__links" href="imressum.html">Impressum</a>
+                    | <a class="footer__links" href="/imressum.html#dsgvo">Datenschutz</a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__socials"><a href="https://www.x.com" target="_blank"><img class="social-media-img"
+                            src="./img/x.png" alt="Twitter"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.facebook.com/" target="_blank"><img
+                            class="social-media-img" src="./img/facebook.png" alt="facebook"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.instagram.com" target="_blank"><img
+                            class="social-media-img" src="./img/instagram.png" alt="instagrram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,127 @@
+footer {
+    background-color: #403b3b;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer__inbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  .footer_nav {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+  }
+  
+  #footer__logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #footer__logo:hover {
+      cursor: pointer;
+      filter: drop-shadow(0px 0px 4px #FFFFFF);
+  }
+  
+  .footer__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .footer__socials {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 100%;
+  }
+  
+  .footer__links {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      padding: 6px;
+  }
+  
+  .footer__links:hover {
+      cursor: pointer;
+      filter: drop-shadow(0px 0px 4px #FFFFFF);
+  }
+  
+  .social-media-img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .social-media-img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px #FFFFFF);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .footer__inbox {
+      display: flex;
+      justify-content: space-between;
+      height: 120px;
+      width: 100%;
+      max-width: 1440px;
+      padding: 0;
+    }
+  
+    .footerLogo__link {
+      padding-left: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .footer__inbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      margin: auto;
+    }
+  
+    .footerLogo__link{
+      display: flex;
+      justify-content: center;
+    }
+  
+    #footer__logo {
+      width: 70%;
+    }
+  
+    .social-media-img {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .footer__links {
+      font-size: 12px;
+    }
+    
+  }

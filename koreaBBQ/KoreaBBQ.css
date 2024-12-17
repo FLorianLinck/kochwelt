@@ -1,0 +1,240 @@
+.headline{
+    font-family: Raleway, sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.subheadline{
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.subline{
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.recipe-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.seperator{
+    background-color: rgba(239,239,239,255);
+    height: 1px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.ingredients__table{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.portion-calculator{
+    font-family: Raleway, sans-serif;
+    /*font-size: 20px;*/
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.input-portions{
+    /*font-size: 17px;*/
+    margin-left: 20px;
+    width: 200px;
+    height: 40px;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: hidden;
+}
+
+.error {
+    color: red;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+.button-portions{
+    font-family: "Raleway", sans-serif;
+    background-color: #008000;
+    color: white;
+    font-size: 17px;
+    width: 180px;
+    height: 40px;
+    border-width: 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-portions:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba (46, 229, 157, 0,4);
+    color: #fff;
+}
+
+.list-bbq{
+    font-family: Raleway, sans-serif;
+    /*font-size: 20px;*/
+    border-collapse: collapse;
+}
+
+td {
+    padding-right: 4px;
+}
+
+.ingredients-gray{
+    background-color: rgba(239,239,239,255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.ingredients-white{
+    background-color: rgba(255,255,255,255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.recipe{
+    margin: auto;
+    padding: 50px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.icon-recipe{
+    background-color: #EFEFEF;
+    font-family: Raleway, sans-serif;
+    /*font-size: 20px;*/
+    margin-right: 30px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.icons{
+    height: 15px;
+    width: 15px;
+}
+
+.recipe-text{
+    font-family: Raleway, sans-serif;
+    /*font-size: 20px;*/
+    margin-top: 30px;
+}
+
+.created-by{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.created-by-img{
+    width: 70px;
+    border-radius: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.created-by-text{
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+@media (max-width: 1000px) {
+
+    .recipe {
+        padding: 50px 25px 50px 25px;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .recipe {
+        padding: 50px 25px 50px 25px;
+        margin: auto;
+    }
+
+    .seperator {
+        margin-top: 0;
+    }
+
+    .portion-calculator {
+        flex-direction: column;
+    }
+
+    .input-portions {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 8px;
+        padding: 0;
+        border-width: 1px;
+        text-align: center;
+        border-right-style: groove;
+        margin-left: 0;
+    }
+
+    .button-portions {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+
+    .headline {
+        text-align: center;
+    }
+
+    .icon-container {
+        padding: 32px 0 32px 0;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 420px) {
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-recipe {
+        text-align: center;
+        display: inline;
+        margin-right: 0px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+}
+

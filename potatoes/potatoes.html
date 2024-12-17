@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean glazed Potatoes</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/kochwelt.css">
+    <link rel="stylesheet" href="/potatoes/potatoes.css">
+    <script src="/potatoes/potatoes.js"></script>
+    <link rel="stylesheet" href="/header/header.css">
+    <script src="/header/headerscript.js"></script>
+    <link rel="stylesheet" href="/footer/footer.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/kochwelt.html">
+                    <img id="navbar__logo" src="/img/logo.png" alt="Kochwelt">
+                </a>
+                <div class="navbar__toggle" onclick="toggel__menu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu navbar__menu__closed" id="mobile-menu">
+                    <li class="navbar__item">
+                        <a href="/kochwelt.html" class="navbar__links">Start</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tortellini_rezept/tortellini_rezept.html" class="navbar__links">Rezept des Tages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact.html" class="navbar__links">Kontakt</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/imressum.html" class="navbar__links">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="recipe">
+
+        <section class="cover">
+            <h1>Korean glazed Potatoes</h1>
+            <img class="recipe-img" src="/img/fried-potatoes.jpg" alt="Glazed Potatoes">
+        </section>
+
+        <div class="templates">
+            <div class="icon-recipe">
+                <img class="icons" src="/img/clock-regular.svg" alt="">
+                <span> 30-40 Min.</span>
+            </div>
+                
+            <div class="icon-recipe">
+                <img class="icons" src="/img/brain-solid.svg" alt="">
+                <span> simpel</span>
+            </div>
+
+            <div class="icon-recipe">
+                <img class="icons" src="/img/calendar-alt-regular.svg">
+                <span> 15.09.2024</span>
+            </div>
+        </div>
+        
+        <div class="seperator">
+        </div>
+
+        <section class="second_section_input">
+            <p>Zutaten für</p>
+            <input class="input-portions" type="number" id="servings" min="1" max="10" value="4">
+            <button class="button-recipe" onclick="calculateServings()">Portionen</button>
+        </section>
+
+        <div id="error-message" style="color: red; font-weight: 700;padding-top: 10px;"></div>
+
+        <div class="ingredients__table">
+            <table>
+                <tbody id="zutatenListe">
+                    <tr class="gray">
+                        <td id="ingredient" quantity="600">600</td>
+                        <td>g Kartoffeln</td>
+                    </tr>
+    
+                    <tr class="white">
+                        <td id="ingredient" quantity="75">75</td>
+                        <td>g Babyspinat</td>
+                    </tr>
+    
+                    <tr class="gray">
+                        <td id="ingredient" quantity="1">1</td>
+                        <td>Gurke</td>
+                    </tr>
+    
+                    <tr class="white">
+                        <td id="ingredient" quantity="2">2</td>
+                        <td>Frühlingszwiebeln</td>
+                    </tr>
+    
+                    <tr class="gray">
+                        <td id="ingredient" quantity="1">1</td>
+                        <td>Knoblauchzehe</td>
+                    </tr>
+    
+                    <tr class="white">
+                        <td id="ingredient" quantity="10">10</td>
+                        <td>g Schnittlauch</td>
+                    </tr>
+    
+                    <tr class="gray">
+                        <td id="ingredient" quantity="50">50</td>
+                        <td>ml Sojasoße</td>
+                    </tr>
+    
+                    <tr class="white">
+                        <td id="ingredient" quantity="20">20</td>
+                        <td>ml Sesamöl</td>
+                    </tr>
+    
+                    <tr class="gray">
+                        <td id="ingredient" quantity="50">50</td>
+                        <td>g Mayonnaise</td>
+                    </tr>
+    
+                    <tr class="white">
+                        <td id="ingredient" quantity="10">10</td>
+                        <td>g Sesamsamen</td>
+                    </tr>
+    
+                    <tr class="gray">
+                        <td id="ingredient" quantity="2">2</td>
+                        <td>g milder Chili-Mix</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        <h2>Zubereitung</h2>
+
+        <div class="templates">
+            <div  class="icon-recipe">
+                <img class="icons" src="/img/clock-regular.svg" alt="clock">
+                <span>ca. 5 Minuten</span>
+            </div>
+
+            <div  class="icon-recipe">
+                <img class="icons" src="/img/clock-regular.svg" alt="brain">
+                <span> Gesamtzeit ca. 30 - 40 Minuten</span>
+            </div>
+        </div>
+
+        <section class="description">
+            <p>Eine Portion ist für zwei Personen.<br><br>
+
+            Kartoffeln (Drillinge) schälen und waschen, danach Kartoffeln je nach Größe halbieren. Zeitgleich den Ofen auf 200 Grad Celsius Umluft, vorheizen.<br>
+            Im Nachgang die Kartoffeln für 20 - 25 Minuten im Ofen garn bis diese goldbraun sind. <br><br>
+
+            Gurke in 1cm Scheiben schneiden. Weißen und grünen Teil der Frühlingszwiebeln getrennt voneinander in feine Ringe schneiden. Schnittlauch in feine Ringe schneiden.<br><br>
+
+            Öl vorbereiten - Knoblauchzehe in eine kleine Schüssel pressen, milden Chilli Mix und die Hälfte vom Schnittlauch dazugeben. Zusätzlich zwei EL Öl in einer großen Pfanne erhitzen. <br><br>
+
+            In einer zweiten kleinen Schüssel Mayonnaise und restlichen Schnittlauch verrühren. <br> 
+            In einer großen Schüssel Gurkenscheiben, weißen Teil der Frühlingszwiebel, die Hälfte des Chiliöls, 1 EL Weißweinessig o.ä. 1 TL Zucker und 0,5 TL Salz vermengen. <br>
+            Spinat darauf geben, aber noch nicht vermengen. <br><br>
+
+            In der vorgeheizten Pfanne, Sojasoße, 2 EL Zucker und 1 TL Weißweinessig o.ä. einmal aufkochen, bis der Zucker geschmolzen ist, 4-5 Min. kochen, bis die Glasur eindickt. <br>
+            Sesam und gebackene Drillinge dazugeben und vermengen. <br>
+            Kurz vor dem Servieren das Sesamöl unterheben. <br><br>
+
+            Anrichten - Spinat unter den Salat heben. <br>
+            Kartoffeln auf einen tiefen Teller verteilen und mit dem grünen Teil der Frühlingszwiebeln toppen. <br>
+            Gurken-Spinat-Salat daneben anrichten. Mit restlichem Chili-Öl garnieren und Schnittlauch-Dip dazu servieren.
+           </p><br>
+        </section>
+
+        <div>
+            <h3>Rezept erstellt von</h3>
+        </div>
+
+        <div class="created">
+            <img class="created-img" src="/img/nico.png" alt="profil">
+            <p class="created-text">Nico</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer__inbox">
+            <!-- <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a> -->
+            <div class="footer_nav">
+                <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="/img/logo_w.png"></a>
+                <div class="footer__links">
+                    <a class="footer__links" href="/imressum.html">Impressum</a>
+                    | <a class="footer__links" href="/imressum.html#dsgvo">Datenschutz</a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__socials"><a href="https://www.x.com" target="_blank"><img class="social-media-img"
+                            src="/img/x.png" alt="Twitter"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.facebook.com/" target="_blank"><img
+                            class="social-media-img" src="/img/facebook.png" alt="facebook"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.instagram.com" target="_blank"><img
+                            class="social-media-img" src="/img/instagram.png" alt="instagrram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

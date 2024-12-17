@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CordonBleu</title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png">    
+    <script src="/header/headerscript.js"></script>
+    <script src="/cordonBleu/cordonBleu.js"></script>
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/cordonBleu/cordonBleu.css">
+    <link rel="stylesheet" href="/kochwelt.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/kochwelt.html">
+                    <img id="navbar__logo" src="/img/logo.png" alt="Kochwelt"" >
+                </a>  
+                <div class=" navbar__toggle" onclick="toggel__menu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu navbar__menu__closed" id="mobile-menu">
+                    <li class="navbar__item">
+                        <a href="/kochwelt.html" class="navbar__links">Start</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tortellini_rezept/tortellini_rezept.html" class="navbar__links">Rezept des Tages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact.html" class="navbar__links">Kontakt</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/imressum.html" class="navbar__links">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="" class="main__container">
+        <div class="aot__container">
+            <h1 class="headline"> Klassisches Cordon bleu mit Kartoffelspalten</h1>
+            <img class="recepi__img" src="/img/cordon_bleu.jpg" alt="Cordon bleu" class="aot__img">
+            <div class="icon__container">
+                <span class="icon__span">
+                    <img class="icon__design" src="/img/clock-regular.svg" alt="Time">
+                    ca 30-40 Minuten</span>
+                <span class="icon__span">
+                    <img class="icon__design" src="/img/brain-solid.svg" alt="Difficulti">
+                    Leicht</span>
+                <span class="icon__span">
+                    <img class="icon__design" src="/img/calendar-alt-regular.svg" alt="Calander">
+                    15.9.2024</span>
+            </div>
+
+
+            <div class="rec__line"></div>
+            <div class="por__input">
+                <label for="servings">Zutaten für</label>
+                <input class="por__amount" id="servings" type="number" value="4" min="1" max="10">
+                <button class="por__button" onclick="calculateServings()">Portionen</button>
+            </div>
+
+            <div id="error-message" style="color: red; font-weight: 700;padding-top: 10px;"></div>
+
+
+            <ul class="ingredients__list">
+                <li class="li__cor">
+                    <span id="ingredient" quantity="800 ">800</span>
+                     g Schweineschnitzel
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="100" >100</span>
+                 g Gouda, in Scheiben
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="100" >100</span>
+                 g Kochschinken, in Scheiben
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="3" >3</span>
+                 Eier
+                </li>
+                <li class="li__cor">
+                <span  ></span>
+                 Salz
+                </li>
+                <li class="li__cor">
+                <span  ></span>
+                 Pfeffer
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="150">150</span>
+                 g Semmelbrösel
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="1.5">1.5</span>
+                 TL Paprikapulver, edelsüß
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="7">70</span>
+                 g Weizenmehl Type 405
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="2">2</span>
+                 EL Butterschmalz
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="8">8</span>
+                 Kartoffeln
+                </li>
+                <li class="li__cor">
+                <span ></span>
+                 Rosamrin, gezupft
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="5">5</span>
+                 Knoblauchzehen
+                </li>
+                <li class="li__cor">
+                <span id="ingredient" quantity="6">6</span>
+                 EL Olivenöl
+                </li>
+            </ul>
+            <h2 class="rec__headline">Zubereitung</h2>
+
+            <section class="icon__container">
+
+                <div class="icon__span">
+                    <img class="icon__design" src="/img/clock-regular.svg" alt="">
+                    <span>Arbeitszeit ca. 30 Min.</span>
+                </div>
+    
+                <div class="icon__span">
+                    <img class="icon__design" src="/img/clock-regular.svg" alt="">
+                    <span>Koch-/Backzeit ca. 10 Min.</span>
+                </div>
+    
+                <div class="icon__span">
+                    <img class="icon__design" src="/img/clock-regular.svg" alt="">
+                    <span>Gesamtzeit ca. 40 Min.</span>
+                </div>
+            </section>
+
+            <div class="rec__text">
+                
+                <p class="rec__steps">  Das Fleisch in vier gleich große Stücke teilen. Jedes Fleischstück an der langen Seite entlang einschneiden. 
+                                        Darauf achten, dass zu allen Seiten ca. 1 cm Abstand bleibt. Das Fleisch mit einem Fleischklopfer flacher klopfen und die Fleischtaschen jeweils mit einer Scheibe Käse und einer Scheibe Kochschinken füllen.</p>
+                <br>
+                
+                <p class="rec__steps">In einem tiefen Teller die Eier verquirlen und mit Salz und Pfeffer würzen. Semmelbrösel und Paprikapulver in einem weiteren tiefen Teller vermengen und Mehl ebenfalls in einen tiefen Teller geben.
+                    Die Kartoffeln vierteln und in eine hohe Schüssel geben. Den Knoblauch in feine Scheiben schneiden und ebenfalls mit dem Rosmarin in die Schüssel geben. Anschließend mit Salz und Pfeffer würzen.
+                    Die Schüssel mit einem Deckel schließen und schütteln bis sich alles gut vermischt hat.
+                </p>
+                <br>
+                
+                    <p class="rec__steps">Butterschmalz in einer Pfanne erhitzen.
+                        <br>Die Kartoffeln auf einem Backblech verteilen und in den, auf 200 Grad vorgeheizten Backofen, für 25 - 30 Minten geben.
+                    </p>
+                <br>
+                
+                <p class="rec__steps">Die Fleischtaschen nacheinander in Mehl wenden, durch die Eimasse ziehen und kurz abtropfen lassen. Anschließend gut in der Semmelbröselmischung wälzen und diese leicht festdrücken. Für eine dicke Panade nochmals in Ei und Semmelbröseln wenden.</p>
+                <br>
+                
+                <p class="rec__steps">Die Schnitzel ca. 4-6 Minuten von beiden Seiten goldbraun braten und mit den Kartoffeln servieren.
+                </p>    
+            </div>
+            <h2 class="profil__headline">Rezept erstellt von</h2>
+            <section class="profil">
+                <img src="/img/profile.png" alt="Profil" class="profil__img">
+                <span class="name">Florian</span>
+            </section>
+
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer__inbox">
+            <!-- <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a> -->
+            <div class="footer_nav">
+                <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="/img/logo_w.png"></a>
+                <div class="footer__links">
+                    <a class="footer__links" href="/imressum.html">Impressum</a>
+                    | <a class="footer__links" href="/imressum.html#dsgvo">Datenschutz</a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__socials"><a href="https://www.x.com" target="_blank"><img class="social-media-img"
+                            src="/img/x.png" alt="Twitter"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.facebook.com/" target="_blank"><img
+                            class="social-media-img" src="/img/facebook.png" alt="facebook"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.instagram.com" target="_blank"><img
+                            class="social-media-img" src="/img/instagram.png" alt="instagrram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

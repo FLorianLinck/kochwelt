@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer contact/footer-contact.css">
+    <link rel="stylesheet" href="/kochwelt.css">
+    <link rel="stylesheet" href="/contact/contact.css">
+    <script src="/contact/contact.js"></script>
+    <script src="/header/headerscript.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/kochwelt.html">
+                    <img id="navbar__logo" src="/img/logo.png" alt="Kochwelt">
+                </a>
+                <div class="navbar__toggle" onclick="toggel__menu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu navbar__menu__closed" id="mobile-menu">
+                    <li class="navbar__item">
+                        <a href="/kochwelt.html" class="navbar__links">Start</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tortellini_rezept/tortellini_rezept.html" class="navbar__links">Rezept des Tages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact.html" class="navbar__links">Kontakt</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/imressum.html" class="navbar__links">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contact__card">
+        <div class="innerContact__card">
+            <div class="h2__contact">
+                <h2>Kontaktiere uns</h2>
+            </div>
+            <form onsubmit="sendMail(event)">
+                <p class="input__label " for="name">Dein Name</p>
+                <input class="input__contact" min="1" type="text" required>
+                <p class="input__label " for="email">Deine Email</p>
+                <input id="email" class="input__contact" type="email">
+                <p class="input__label" for="">Dein Anlass</p>
+                <select class="input__contact" name="Dein Anlass" id="">
+                    <option class value="disabeld"></option>
+                    <option class="selection__row" value="recipe">Neues Rezept</option>
+                    <option class="selection__row" value="help">Hilfe</option>
+                    <option class="selection__row" value="question">Fragen</option>
+                    <option class="selection__row" value="error">Ein Fehler melden</option>
+                    <option class="selection__row" value="other">Sonstiges</option>
+                </select>
+                <p class="input__label" for="massage" required>Deine Nachricht</p>
+                <textarea name="massage"></textarea>
+            
+                <div class="contactButton__container">
+                    <button class="button__contact">Abschicken</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__inbox">
+            <!-- <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a> -->
+            <div class="footer_nav">
+                <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a>
+                <div class="footer__links">
+                    <a class="footer__links" href="imressum.html">Impressum</a>
+                    | <a class="footer__links" href="/imressum.html#dsgvo">Datenschutz</a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__socials"><a href="https://www.x.com" target="_blank"><img class="social-media-img"
+                            src="./img/x.png" alt="Twitter"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.facebook.com/" target="_blank"><img
+                            class="social-media-img" src="./img/facebook.png" alt="facebook"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.instagram.com" target="_blank"><img
+                            class="social-media-img" src="./img/instagram.png" alt="instagrram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

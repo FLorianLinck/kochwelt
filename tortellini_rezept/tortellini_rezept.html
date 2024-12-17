@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortellini</title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/tortellini_rezept/tortellini_rezept.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="icon" href="/img/logo_small.png">
+    <link rel="stylesheet" href="/kochwelt.css">
+    <script src="/tortellini_rezept/tortellini_rezept.js"></script>
+    <script src="/header/headerscript.js"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/kochwelt.html">
+                    <img id="navbar__logo" src="/img/logo.png" alt="Kochwelt">
+                </a>
+                <div class="navbar__toggle" onclick="toggel__menu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu navbar__menu__closed" id="mobile-menu">
+                    <li class="navbar__item">
+                        <a href="/kochwelt.html" class="navbar__links">Start</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tortellini_rezept/tortellini_rezept.html" class="navbar__links">Rezept des Tages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact.html" class="navbar__links">Kontakt</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/imressum.html" class="navbar__links">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="rez_container">
+        <section class="container_rez">
+            <h1 class="h1_rez">Tortellini alla panna</h1>
+            <img class="tor_img_rez" src="/img/tortellini.png" alt="">
+
+            <section class="container_icon">
+                <div class="icon_span">
+                    <img class="icon_rez" src="/img/clock-regular.svg" alt="">
+                    <span>ca. 30 Min.</span>
+                </div>
+
+                <div class="icon_span">
+                    <img class="icon_rez" src="/img/brain-solid.svg" alt="">
+                    <span>simpel</span>
+                </div>
+
+                <div class="icon_span">
+                    <img class="icon_rez" src="/img/calendar-alt-regular.svg" alt="">
+                    <span>01.09.2024</span>
+                </div>
+            </section>
+            <div class="rez_line"></div>
+        </section>
+
+        <section class="input">
+            <label for="por_input">Zutaten für</label>
+            <input class="input_des" id="servings" type="number" value="4" min="1" max="10">
+            <button onclick="calculateServings()" class="bttn_in">Portionen</button>
+        </section>
+
+        <div id="error-message" style="color: red; font-weight: 700;padding-top: 10px;"></div>
+
+            <ul class="ul_tor ingredients__list">
+                <li class="li_tor"><span id="ingredient" quantity="500" >500</span> g Tortellini
+                    (Kühltheke)</li>
+                <li class="li_tor"><span id="ingredient" quantity="200" >200</span> g Kochschinken,
+                    gewürfelter</li>
+                <li class="li_tor"><span id="ingredient" quantity="1" >1</span> EL Butter</li>
+                <li class="li_tor"><span id="ingredient" quantity="600" >600</span> ml Sahne</li>
+                <li class="li_tor"><span id="ingredient" quantity="2" >2 </span> Eigelb</li>
+                <li class="li_tor"><span id="ingredient" quantity="4" >4</span> EL Parmesan, frisch
+                    geriebener</li>
+                <li class="li_tor"><span id="ingredient" quantity="1" >1</span> TL Muskat</li>
+                <li class="li_tor"><span id="ingredient" quantity="1" >1</span> TL Salz</li>
+            </ul>
+
+        <h2 class="subheadline">Zubereitung</h2>
+
+        <section class="container_icon">
+
+            <div class="icon_span">
+                <img class="icon_rez" src="/img/clock-regular.svg" alt="">
+                <span>Arbeitszeit ca. 10 Min.</span>
+            </div>
+
+            <div class="icon_span">
+                <img class="icon_rez" src="/img/clock-regular.svg" alt="">
+                <span>Koch-/Backzeit ca. 20 Min.</span>
+            </div>
+
+            <div class="icon_span">
+                <img class="icon_rez" src="/img/clock-regular.svg" alt="">
+                <span>Gesamtzeit ca. 30 Min.</span>
+            </div>
+        </section>
+
+        <section class="p_text">
+            <p>Die Tortellini nach Packungsanweisung kochen.</p>
+            <br>
+            <p>Den gekochten Schinken in einer tiefen Pfanne in Butter kurz anbraten, dann 400 ml der Sahne hineingeben
+                und auf kleiner Stufe köcheln lassen.
+                Wenn die Tortellini gar sind, diese in die Pfanne zur Schinkensahne geben und weiter köcheln lassen.
+            </p>
+            <br>
+            <p>In der Zwischenzeit in einer kleinen Schüssel Eigelb mit Parmesan, Muskatnuss, Salz und den restlichen
+                200 ml Sahne verrühren. Dies in die Pfanne zu den Tortellini geben und so lange köcheln lassen, bis die
+                Saucee dickflüssig wird. Die Tortellini sofort servieren.</p>
+                <br>
+            <p>Sehr gehaltvoll, aber der Geschmack ist fantastisch. Ab und zu kann man sich so etwas mal gönnen.</p>
+
+        </section>
+
+        <h3 class="subline">Rezept erstellt von</h3>
+
+        <section class="profile">
+            <img class="profile_rez" src="/img/alex.jpg" alt="">
+            <span class="name_rez">Alex</span>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer__inbox">
+            <!-- <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a> -->
+            <div class="footer_nav">
+                <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="/img/logo_w.png"></a>
+                <div class="footer__links">
+                    <a class="footer__links" href="/imressum.html">Impressum</a>
+                    | <a class="footer__links" href="/imressum.html#dsgvo">Datenschutz</a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__socials"><a href="https://www.x.com" target="_blank"><img class="social-media-img"
+                            src="/img/x.png" alt="Twitter"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.facebook.com/" target="_blank"><img
+                            class="social-media-img" src="/img/facebook.png" alt="facebook"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.instagram.com" target="_blank"><img
+                            class="social-media-img" src="/img/instagram.png" alt="instagrram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

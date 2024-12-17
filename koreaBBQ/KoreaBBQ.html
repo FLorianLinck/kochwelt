@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoreaBBQ</title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png">
+    <link rel="stylesheet" href="/kochwelt.css">
+    <link rel="stylesheet" href="/koreaBBQ/KoreaBBQ.css">
+    <script src="/koreaBBQ/KoreaBBQ.js"></script>
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <script src="/header/headerscript.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/kochwelt.html">
+                    <img id="navbar__logo" src="/img/logo.png" alt="Kochwelt">
+                </a>
+                <div class="navbar__toggle" onclick="toggel__menu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu navbar__menu__closed" id="mobile-menu">
+                    <li class="navbar__item">
+                        <a href="/kochwelt.html" class="navbar__links">Start</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tortellini_rezept/tortellini_rezept.html" class="navbar__links">Rezept des Tages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact.html" class="navbar__links">Kontakt</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/imressum.html" class="navbar__links">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="recipe">
+
+        <div>
+            <h1 id="topside" class="headline">Korean BBQ </h1>
+            <!--<h3 clas="subline">Bulgogi dazu Pak Choi, Umami-Reis und Sesammayo</h3> -->
+
+            <img class="recipe-img" src="/img/KoreaBBQ.png">
+        </div>
+        
+        <div class="icon-container">
+
+            <div class="icon-recipe">
+                <img class="icons" src="/img/clock-regular.svg">
+                <span> ca. 25 Min.</span>
+            </div>  
+
+            <div class="icon-recipe">
+                <img class="icons" src="/img/brain-solid.svg">
+                <span>simpel</span> 
+                </div>
+
+            <div class="icon-recipe">
+                <img class="icons" src="/img/calendar-alt-regular.svg"> 
+                <span>01.09.2024</span>
+            </div>
+        </div>
+
+        <div class="seperator">
+        </div>
+
+        <div class="portion-calculator">
+            <p> Zutaten für:</p>
+            <input class="input-portions" id="servings" type="number" min="1" max="10" value="4"> 
+            <button class="button-portions" onclick="calculateServings()">Portionen</button>   
+        </div>
+        <div id="error-message" style="color: red; font-weight: 700;padding-top: 10px;"></div>
+        
+        <div class="ingredients__table">
+            <table class="table-bbq">
+                <tbody id="zutatenListe">
+
+                <tr class="ingredients-gray">
+                    <td id="ingredient" quantity="500">500</td>
+                    <td>g Schweinelachssteaks</td>
+                </tr>
+
+                <tr class="ingredients-white">
+                    <td id="ingredient" quantity="800">800</td>
+                    <td>g Pak Choi</td>
+                </tr>
+                
+                <tr class="ingredients-gray">
+                    <td id="ingredient" quantity="2">2</td>
+                    <td>Stk. Frühlingszwiebel</td>
+                </tr>
+                <tr class="ingredients-white">
+                    <td id="ingredient" quantity="48">48</td>
+                    <td>ml Sojasoße</td>
+                </tr>
+                <tr class="ingredients-gray">
+                    <td id="ingredient" quantity="16">16</td>
+                    <td>ml Sriracha Sauce</td>
+                </tr>
+                <tr class="ingredients-white">
+                    <td id="ingredient" quantity="300">300</td>
+                    <td>g Jasminreis</td>
+                </tr>
+                <tr class="ingredients-gray">
+                    <td id="ingredient" quantity="2">2</td>
+                    <td>Stk. Knoblauchzehe</td>
+                </tr>
+                <tr class="ingredients-white">
+                    <td id="ingredient" quantity="200">200</td>
+                    <td>ml Bulgogisoße</td>
+                </tr>
+                <tr class="ingredients-gray">
+                    <td id="ingredient" quantity="100">100</td>
+                    <td>ml Mayonnaise</td>
+                </tr>
+                <tr class="ingredients-white">
+                    <td id="ingredient" quantity="20">20</td>
+                    <td>g Sesamsamen</td>
+                </tr>
+                <tr class="ingredients-gray">
+                    <td id="ingredient" quantity="1200">1200</td>
+                    <td>ml Wasser</td>
+                </tr>
+                <tr class="ingredients-white">
+                    <td id="ingredient" quantity="2">2</td>
+                    <td>EL Öquantiy</td>
+                </tr>
+                <tr class="ingredients-gray">
+                    <td>Pfeffer nach geschmack</td>
+                </tr>
+                </tbody>
+              </table>         
+        </div>
+
+        <h2 class="subheadline">Zubereitung</h2>
+
+        <div class="icon-container">
+            <div class="icon-recipe">
+                <img class="icons" src="/img/clock-regular.svg"> 
+                <span>25 Min.</span>
+            </div>  
+
+            <div class="icon-recipe">
+                <img class="icons" src="/img/clock-regular.svg"> 
+                <span>ca. 25 Min.</span> 
+            </div>
+        </div>
+        
+        <p class="recipe-text"> <!--Recipe Text-->
+            
+            Erhitze 300 ml (je nach Portionen) Wasser im Topf.
+            <br>
+            <br> 
+            Tipp: Falls Du grillen möchtest, kannst Du den Grill vorheizen und später verwenden.
+            <br>
+            <br> 
+            Knoblauch grob hacken.
+            Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden. 
+            <br>
+            <br> 
+            In einem kleinen Topf mit Deckel 1 EL (je nach Portionen) Öl erhitzen. 
+            Knoblauch und weißen Teil der Frühlingszwiebel darin 30 Sek. anschwitzen.
+            Reis und 300 ml (je nach Portionen) heißes Wasser zugeben, aufkochen und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. 
+            Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.
+            <br>
+            <br> 
+            Schweinelachssteaks zusammen mit Bulgogisoße, 2 EL (je nach Portionen) Öl und Pfeffer in eine große Schüssel geben und kurz marinieren lassen.
+            In einer kleinen Schüssel Mayonnaise, Sriracha Sauce (Achtung: scharf!), 
+            Sesamsamen und die Hälfte der Sojasoße zu einem Dip vermengen.
+            Pak Choi längs halbieren und die Schnittseite mit 1 EL (je nach Portionen) des Dips einreiben.
+            <br>
+            <br> 
+            Für die Pfanne:
+            Eine große Pfanne erhitzen. Pak Choi darin rundum 3 bis 4 Min. anbraten. Aus der Pfanne nehmen und Pfanne auswischen. 
+            Die große Pfanne erneut erhitzen. Schweinelachssteaks darin 2 bis 4 Min. je Seite anbraten.
+            <br>
+            <br> 
+            Für den Grill:
+            Pak Choi mit der Schnittseite nach unten auf den Grill geben und 3 bis 6 Min. grillen, 
+            bis er leicht anbrennt. Wenden und weitere 1 bis 2 Min. grillen.
+            Schweinelachssteaks 2 bis 5 Min. je Seite grillen, bis das Fleisch innen nicht mehr rosa ist.
+            <br>
+            <br> 
+            Restliche Sojasoße zum Reis geben, unterrühren und mit einer Gabel auflockern.
+            Schweinelachssteaks nach Belieben schneiden.
+            Umami-Reis, Pak Choi und Bulgogi-Steaks auf tiefen Tellern anrichten, 
+            mit dem grünem Teil der Frühlingszwiebel toppen und mit dem Dip genießen. 
+            <br> 
+            <br>
+            Guten Appetit! 
+        </p>
+
+        <div>
+            <h3 class="subline">Rezept erstellt von</h3>
+        </div>
+        
+        <div class="created-by">
+            <img class="created-by-img" src="/img/profile.png">
+            <p class="created-by-text">Andreas</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer__inbox">
+            <!-- <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="./img/logo_w.png"></a> -->
+            <div class="footer_nav">
+                <a class="footerLogo__link" href="#navbar__logo"><img id="footer__logo" src="/img/logo_w.png"></a>
+                <div class="footer__links">
+                    <a class="footer__links" href="/imressum.html">Impressum</a>
+                    | <a class="footer__links" href="/imressum.html#dsgvo">Datenschutz</a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__socials"><a href="https://www.x.com" target="_blank"><img class="social-media-img"
+                            src="/img/x.png" alt="Twitter"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.facebook.com/" target="_blank"><img
+                            class="social-media-img" src="/img/facebook.png" alt="facebook"></a>
+                </li>
+                <li class="footer__socials"><a href="https://www.instagram.com" target="_blank"><img
+                            class="social-media-img" src="/img/instagram.png" alt="instagrram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
